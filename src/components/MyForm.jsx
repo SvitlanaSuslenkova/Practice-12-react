@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 import InputsInfo from "./InputsInfo";
 import "./MyForm.css";
 
@@ -11,11 +12,11 @@ export default function MyForm() {
     // getValues, //for confirm password=password
     // formState: { errors, isSubmitting, isSubmitted },
   } = useForm();
-
+  let navigateTo = useNavigate();
   const onSubmit = () => {
     console.log("submitted form");
+    navigateTo("/registered");
     reset();
-    window.location.href = "/registered";
   };
 
   return (
@@ -40,3 +41,4 @@ export default function MyForm() {
     </>
   );
 }
+
