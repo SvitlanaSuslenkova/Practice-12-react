@@ -1,0 +1,71 @@
+form {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 12px;
+}
+input {
+  width: 100%;
+  height: 14vw;
+  max-height: 56px;
+  border: 1px solid var(--bottom-triangle-color);
+  border-radius: 0.5em;
+  padding-inline: 2em;
+  font-size: 4vw;
+  font-family: inherit;
+  /* background-color: rgba(var(--bg-color), 0.2);*/
+  background-color: hsl(42, 32%, 73%, 20%);
+}
+input::placeholder {
+  font-weight: 300;
+  font-size: 4vw;
+  color: var(--text-color);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.errormessage {
+  font-size: 3vw;
+  color: red;
+  text-align: right;
+  font-style: italic;
+}
+input:invalid[focused="true"] ~ span {
+  display: block;
+}
+button {
+  width: 100%;
+  background-color: hsl(197, 43%, 49%, 100%);
+  font-size: 4.5vw;
+  color: white;
+  font-weight: 400;
+  padding: 2.5vw 5vw;
+  border: 0;
+  border-radius: 0.5em;
+  margin: 8px auto 24px auto;
+  box-shadow: 0vw 1vw 1.2vw hsl(0, 100%, 0%, 50%),
+    inset 0vw 1vw 0.5vw hsl(0, 0%, 100%, 0.3);
+  letter-spacing: 0.5px;
+}
+
+@media only screen and (min-width: 520px) {
+  button {
+    font-size: 1.5rem;
+  }
+  form {
+    row-gap: 20px;
+  }
+  input::placeholder,
+  input {
+    /*  margin-top: 0;
+    font-size: 1rem;
+    grid-row: 1;*/
+    font-size: 1.2rem;
+  }
+  .errormessage {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 820px) {
+  button {
+    padding: 16px;
+  }
+}

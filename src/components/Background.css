@@ -1,0 +1,79 @@
+.triangleone,
+.triangletwo,
+.trianglethree,
+.trianglefour,
+.trianglefive {
+  width: 0;
+  height: 0;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-top: 40vw solid var(--bottom-triangle-color);
+  filter: drop-shadow(0vw 1vw 1vw hsl(0, 100%, 0%, 50%));
+}
+.triangletwo {
+  border-top: 40vw solid var(--fours-triangle-color);
+  position: absolute;
+  top: -5vw;
+}
+.trianglethree {
+  border-top: 40vw solid var(--third-triangle-color);
+  position: absolute;
+  top: -10vw;
+}
+.trianglefour {
+  border-top: 40vw solid var(--small-button-color);
+  position: absolute;
+  top: -15vw;
+}
+.trianglefive {
+  border-top: 40vw solid var(--top-triangle-color);
+  position: absolute;
+  top: -20vw;
+}
+.triangles-desktop {
+  display: none;
+}
+@media only screen and (min-width: 820px) {
+  .triangles-down {
+    display: none;
+  }
+  .triangles-desktop {
+    display: block;
+  }
+
+  .triangleone,
+  .triangletwo,
+  .trianglethree,
+  .trianglefour,
+  .trianglefive {
+    width: 0;
+    height: 0;
+    border-left: 98vw solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 80vh solid var(--bottom-triangle-color);
+    border-top: 0;
+    filter: none;
+    position: fixed;
+    top: auto;
+    bottom: 0px;
+    left: 2vw;
+    z-index: -5;
+    filter: drop-shadow(10px -5px 5px hsl(0, 100%, 0%, 50%));
+  }
+  .triangletwo {
+    z-index: -4;
+    border-bottom: 70vh solid var(--fours-triangle-color);
+  }
+  .trianglethree {
+    z-index: -3;
+    border-bottom: 60vh solid var(--third-triangle-color);
+  }
+  .trianglefour {
+    z-index: -2;
+    border-bottom: 50vh solid var(--small-button-color);
+  }
+  .trianglefive {
+    z-index: -1;
+    border-bottom: 40vh solid var(--top-triangle-color);
+  }
+}

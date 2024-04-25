@@ -1,0 +1,26 @@
+:root {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+
+  --text-color: hsl(202, 100%, 18%);
+  /*--bg-color: hsl(16, 72%, 70%, 100%);*/
+  /* --bg-color: hsl(17, 89%, 82%);*/
+  --bg-color: 250, 191, 168; /*rgba*/
+  --small-button-color: hsl(197, 43%, 49%, 100%);
+  --top-triangle-color: hsl(0, 0%, 95%, 100%); /*light-grey*/
+  --third-triangle-color: hsl(42, 32%, 73%, 100%); /*light-orange*/
+  --fours-triangle-color: hsl(202, 99%, 31%, 100%);
+  --bottom-triangle-color: hsl(33, 40%, 48%, 100%); /*light-brown*/
+
+  color: var(--text-color);
+  background-color: rgba(var(--bg-color), 1);
+
+  /*color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;*/
+}
