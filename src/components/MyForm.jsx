@@ -13,15 +13,21 @@ export default function MyForm() {
     // getValues, //for confirm password=password
     // formState: { errors, isSubmitting, isSubmitted },
   } = useForm();
+<<<<<<< HEAD
   const [changetype, setChangetype] = useState(false);
+=======
+>>>>>>> 539d2f551d49557f28f07476023d4d91869fa099
   let navigateTo = useNavigate();
   const onSubmit = () => {
     console.log("submitted form");
     navigateTo("/registered");
     reset();
+<<<<<<< HEAD
   };
   const iconClick = () => {
     setChangetype(!changetype);
+=======
+>>>>>>> 539d2f551d49557f28f07476023d4d91869fa099
   };
 
   return (
@@ -59,3 +65,4 @@ export default function MyForm() {
     </>
   );
 }
+
