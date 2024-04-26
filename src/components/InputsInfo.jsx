@@ -1,3 +1,4 @@
+import { PiEye, PiEyeClosed } from "react-icons/pi";
 const InputsInfo = [
   {
     id: 1,
@@ -32,7 +33,7 @@ const InputsInfo = [
   {
     id: 3,
     name: "email",
-    type: "email",
+    type: "text",
     placeholder: "Email Address",
     required: "Email Address cannot be empty",
     pattern: {
@@ -45,6 +46,7 @@ const InputsInfo = [
     id: 4,
     name: "password",
     type: "password",
+    typeTwo: "text",
     placeholder: "Password",
     required: "Password cannot be empty",
     pattern: {
@@ -52,6 +54,11 @@ const InputsInfo = [
         /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/,
       message:
         "Password should contain at least 1 number, 1 lowercase and 1 uppercase letters, 1 special character and be 8-15 characters long",
+    },
+    icon: {
+      open: PiEye,
+      closed: PiEyeClosed,
+      alt: "toggle icon",
     },
   },
 ];
